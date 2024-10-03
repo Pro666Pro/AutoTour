@@ -56,7 +56,7 @@ GetBadges:AddToggle({
 	Name = "Auto-Anchor Player",
         Default = true,
 	Callback = function(Value)
-    trap3 = Value
+        trap3 = Value
 while trap3 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 end
