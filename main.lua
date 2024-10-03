@@ -29,30 +29,6 @@ end
 })
 
 GetBadges:AddToggle({
-	Name = "Anti-Ragdoll",
-        Default = true,
-	Callback = function(Value)
-        trap2 = Value
-while trap2 == true do
-if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:FindFirstChild("Torso") and game.Players.LocalPlayer.Character:FindFirstChild("Ragdolled") then
-if game.Players.LocalPlayer.Character:FindFirstChild("Ragdolled") and game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Value == true then
-repeat task.wait()
-if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
-game.Players.LocalPlayer.Character.Torso.Anchored = true
-end
-until game.Players.LocalPlayer.Character:FindFirstChild("Ragdolled") and game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Value == false
-if game.Players.LocalPlayer.Character:FindFirstChild("Torso") then
-game.Players.LocalPlayer.Character.Torso.Anchored = false
-end
-end
-end
-task.wait()
-end
-end
-  	end    
-})
-
-GetBadges:AddToggle({
 	Name = "Auto-Anchor Player",
         Default = true,
 	Callback = function(Value)
