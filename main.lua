@@ -17,9 +17,9 @@ local GetBadges = Badge:AddSection({
 
 GetBadges:AddToggle({
 	Name = "Auto-Enter Tour",
-    Default = true,
+        Default = true,
 	Callback = function(Value)
-    trap1 = Value
+        trap1 = Value
 while trap1 == true do
 game:GetService("ReplicatedStorage").PromptEvent:FireServer()
 game:GetService("ReplicatedStorage").EventAnswered:FireServer()
@@ -30,9 +30,9 @@ end
 
 GetBadges:AddToggle({
 	Name = "Anti-Ragdoll",
-    Default = true,
+        Default = true,
 	Callback = function(Value)
-    trap2 = Value
+        trap2 = Value
 while trap2 == true do
 if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:FindFirstChild("Torso") and game.Players.LocalPlayer.Character:FindFirstChild("Ragdolled") then
 if game.Players.LocalPlayer.Character:FindFirstChild("Ragdolled") and game.Players.LocalPlayer.Character:WaitForChild("Ragdolled").Value == true then
@@ -54,7 +54,7 @@ end
 
 GetBadges:AddToggle({
 	Name = "Auto-Anchor Player",
-    Default = true,
+        Default = true,
 	Callback = function(Value)
     trap3 = Value
 while trap3 == true do
