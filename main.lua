@@ -1,4 +1,4 @@
-local GameName = "auto tourtament win - by nexer"
+local GameName = "auto tour win - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "op script fr", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
@@ -16,7 +16,7 @@ local GetBadges = Badge:AddSection({
 })
 
 GetBadges:AddToggle({
-	Name = "Auto-Enter Tourtament",
+	Name = "Auto-Enter Tour",
     Default = true,
 	Callback = function(Value)
     trap1 = Value
@@ -60,8 +60,12 @@ GetBadges:AddToggle({
 while trap3 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 end
-while trap3 == false do
+  	end    
+})
+
+GetBadges:AddButton({
+	Name = "Un-anchor player",
+	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-end
   	end    
 })
